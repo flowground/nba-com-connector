@@ -1,0 +1,9 @@
+{
+    "type": "object",
+    "properties": {
+        "GameID": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

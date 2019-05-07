@@ -1,0 +1,17 @@
+{
+    "type": "object",
+    "properties": {
+        "TeamID": {
+            "required": true,
+            "type": "string"
+        },
+        "Season": {
+            "required": true,
+            "type": "string"
+        },
+        "SeasonType": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "type": "object",
+    "properties": {
+        "GameID": {
+            "required": false,
+            "type": "string"
+        },
+        "StartPeriod": {
+            "required": false,
+            "type": "string"
+        },
+        "EndPeriod": {
+            "required": false,
+            "type": "string"
+        },
+        "StartRange": {
+            "required": false,
+            "type": "string"
+        },
+        "EndRange": {
+            "required": false,
+            "type": "string"
+        },
+        "RangeType": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

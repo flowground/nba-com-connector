@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": {
+        "PerMode": {
+            "required": true,
+            "type": "string"
+        },
+        "PlayerID": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

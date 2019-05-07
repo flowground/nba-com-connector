@@ -1,0 +1,25 @@
+{
+    "type": "object",
+    "properties": {
+        "LeagueID": {
+            "required": true,
+            "type": "string"
+        },
+        "PerMode": {
+            "required": true,
+            "type": "string"
+        },
+        "Season": {
+            "required": true,
+            "type": "string"
+        },
+        "SeasonType": {
+            "required": true,
+            "type": "string"
+        },
+        "DefenseCategory": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

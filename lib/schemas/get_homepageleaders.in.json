@@ -1,0 +1,41 @@
+{
+    "type": "object",
+    "properties": {
+        "StatCategory": {
+            "required": true,
+            "type": "string"
+        },
+        "LeagueID": {
+            "required": true,
+            "type": "string"
+        },
+        "Season": {
+            "required": true,
+            "type": "string"
+        },
+        "SeasonType": {
+            "required": true,
+            "type": "string"
+        },
+        "PlayerOrTeam": {
+            "required": true,
+            "type": "string"
+        },
+        "Game": {
+            "required": false,
+            "type": "string"
+        },
+        "Player": {
+            "required": false,
+            "type": "string"
+        },
+        "PlayerScope": {
+            "required": true,
+            "type": "string"
+        },
+        "GameScope": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

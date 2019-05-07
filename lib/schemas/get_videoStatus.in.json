@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": {
+        "LeagueID": {
+            "required": true,
+            "type": "string"
+        },
+        "GameDate": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

@@ -1,0 +1,85 @@
+{
+    "type": "object",
+    "properties": {
+        "LeagueID": {
+            "required": true,
+            "type": "string"
+        },
+        "Season": {
+            "required": true,
+            "type": "string"
+        },
+        "SeasonType": {
+            "required": true,
+            "type": "string"
+        },
+        "TeamID": {
+            "required": true,
+            "type": "string"
+        },
+        "Outcome": {
+            "required": true,
+            "type": "string"
+        },
+        "Location": {
+            "required": true,
+            "type": "string"
+        },
+        "Month": {
+            "required": true,
+            "type": "string"
+        },
+        "SeasonSegment": {
+            "required": true,
+            "type": "string"
+        },
+        "DateFrom": {
+            "required": true,
+            "type": "string"
+        },
+        "DateTo": {
+            "required": true,
+            "type": "string"
+        },
+        "OpponentTeamID": {
+            "required": true,
+            "type": "string"
+        },
+        "VsConference": {
+            "required": true,
+            "type": "string"
+        },
+        "VsDivision": {
+            "required": true,
+            "type": "string"
+        },
+        "GameSegment": {
+            "required": true,
+            "type": "string"
+        },
+        "Period": {
+            "required": true,
+            "type": "string"
+        },
+        "LastNGames": {
+            "required": true,
+            "type": "string"
+        },
+        "GameID": {
+            "required": true,
+            "type": "string"
+        },
+        "GROUP_ID": {
+            "required": true,
+            "type": "string"
+        },
+        "ContextMeasure": {
+            "required": true,
+            "type": "string"
+        },
+        "ContextFilter": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

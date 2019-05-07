@@ -1,0 +1,1581 @@
+{
+    "title": "NBA Stats",
+    "description": "The destination for current and historic NBA statistics.",
+    "docsUrl": "",
+    "url": "https://api.apis.guru/v2/specs/nba.com/1.0.0/swagger.json",
+    "envVars": {},
+    "credentials": {
+        "fields": {
+            "server": {
+                "label": "Server",
+                "viewClass": "SelectView",
+                "model": [
+                    "https://stats.nba.com/stats",
+                    "--- Custom URL"
+                ],
+                "required": true
+            },
+            "otherServer": {
+                "label": "Custom Server URL",
+                "viewClass": "TextFieldView"
+            }
+        }
+    },
+    "triggers": {
+        "startFlow": {
+            "main": "./lib/triggers/startFlow.js",
+            "type": "polling",
+            "title": "Start Flow",
+            "fields": {}
+        }
+    },
+    "actions": {
+        "get_allstarballotpredictor": {
+            "main": "./lib/actions/get_allstarballotpredictor.js",
+            "title": "get_allstarballotpredictor",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_allstarballotpredictor.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_boxscore": {
+            "main": "./lib/actions/get_boxscore.js",
+            "title": "get_boxscore",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_boxscore.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_boxscoreadvanced": {
+            "main": "./lib/actions/get_boxscoreadvanced.js",
+            "title": "get_boxscoreadvanced",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_boxscoreadvanced.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_boxscoreadvancedv2": {
+            "main": "./lib/actions/get_boxscoreadvancedv2.js",
+            "title": "get_boxscoreadvancedv2",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_boxscoreadvancedv2.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_boxscorefourfactors": {
+            "main": "./lib/actions/get_boxscorefourfactors.js",
+            "title": "get_boxscorefourfactors",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_boxscorefourfactors.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_boxscorefourfactorsv2": {
+            "main": "./lib/actions/get_boxscorefourfactorsv2.js",
+            "title": "get_boxscorefourfactorsv2",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_boxscorefourfactorsv2.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_boxscoremisc": {
+            "main": "./lib/actions/get_boxscoremisc.js",
+            "title": "get_boxscoremisc",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_boxscoremisc.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_boxscoremiscv2": {
+            "main": "./lib/actions/get_boxscoremiscv2.js",
+            "title": "get_boxscoremiscv2",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_boxscoremiscv2.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_boxscoreplayertrackv2": {
+            "main": "./lib/actions/get_boxscoreplayertrackv2.js",
+            "title": "get_boxscoreplayertrackv2",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_boxscoreplayertrackv2.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_boxscorescoring": {
+            "main": "./lib/actions/get_boxscorescoring.js",
+            "title": "get_boxscorescoring",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_boxscorescoring.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_boxscorescoringv2": {
+            "main": "./lib/actions/get_boxscorescoringv2.js",
+            "title": "get_boxscorescoringv2",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_boxscorescoringv2.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_boxscoresummaryv2": {
+            "main": "./lib/actions/get_boxscoresummaryv2.js",
+            "title": "get_boxscoresummaryv2",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_boxscoresummaryv2.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_boxscoretraditionalv2": {
+            "main": "./lib/actions/get_boxscoretraditionalv2.js",
+            "title": "get_boxscoretraditionalv2",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_boxscoretraditionalv2.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_boxscoreusage": {
+            "main": "./lib/actions/get_boxscoreusage.js",
+            "title": "get_boxscoreusage",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_boxscoreusage.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_boxscoreusagev2": {
+            "main": "./lib/actions/get_boxscoreusagev2.js",
+            "title": "get_boxscoreusagev2",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_boxscoreusagev2.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_commonTeamYears": {
+            "main": "./lib/actions/get_commonTeamYears.js",
+            "title": "get_commonTeamYears",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_commonTeamYears.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_commonallplayers": {
+            "main": "./lib/actions/get_commonallplayers.js",
+            "title": "get_commonallplayers",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_commonallplayers.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_commonplayerinfo": {
+            "main": "./lib/actions/get_commonplayerinfo.js",
+            "title": "get_commonplayerinfo",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_commonplayerinfo.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_commonplayoffseries": {
+            "main": "./lib/actions/get_commonplayoffseries.js",
+            "title": "get_commonplayoffseries",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_commonplayoffseries.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_commonteamroster": {
+            "main": "./lib/actions/get_commonteamroster.js",
+            "title": "get_commonteamroster",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_commonteamroster.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_draftcombinedrillresults": {
+            "main": "./lib/actions/get_draftcombinedrillresults.js",
+            "title": "get_draftcombinedrillresults",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_draftcombinedrillresults.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_draftcombinenonstationaryshooting": {
+            "main": "./lib/actions/get_draftcombinenonstationaryshooting.js",
+            "title": "get_draftcombinenonstationaryshooting",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_draftcombinenonstationaryshooting.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_draftcombineplayeranthro": {
+            "main": "./lib/actions/get_draftcombineplayeranthro.js",
+            "title": "get_draftcombineplayeranthro",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_draftcombineplayeranthro.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_draftcombinespotshooting": {
+            "main": "./lib/actions/get_draftcombinespotshooting.js",
+            "title": "get_draftcombinespotshooting",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_draftcombinespotshooting.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_draftcombinestats": {
+            "main": "./lib/actions/get_draftcombinestats.js",
+            "title": "get_draftcombinestats",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_draftcombinestats.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_drafthistory": {
+            "main": "./lib/actions/get_drafthistory.js",
+            "title": "get_drafthistory",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_drafthistory.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_franchisehistory": {
+            "main": "./lib/actions/get_franchisehistory.js",
+            "title": "get_franchisehistory",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_franchisehistory.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_homepageleaders": {
+            "main": "./lib/actions/get_homepageleaders.js",
+            "title": "get_homepageleaders",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_homepageleaders.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_homepagev2": {
+            "main": "./lib/actions/get_homepagev2.js",
+            "title": "get_homepagev2",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_homepagev2.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_leaderstiles": {
+            "main": "./lib/actions/get_leaderstiles.js",
+            "title": "get_leaderstiles",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_leaderstiles.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_leaguedashlineups": {
+            "main": "./lib/actions/get_leaguedashlineups.js",
+            "title": "get_leaguedashlineups",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_leaguedashlineups.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_leaguedashplayerbiostats": {
+            "main": "./lib/actions/get_leaguedashplayerbiostats.js",
+            "title": "get_leaguedashplayerbiostats",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_leaguedashplayerbiostats.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_leaguedashplayerclutch": {
+            "main": "./lib/actions/get_leaguedashplayerclutch.js",
+            "title": "get_leaguedashplayerclutch",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_leaguedashplayerclutch.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_leaguedashplayerptshot": {
+            "main": "./lib/actions/get_leaguedashplayerptshot.js",
+            "title": "get_leaguedashplayerptshot",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_leaguedashplayerptshot.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_leaguedashplayershotlocations": {
+            "main": "./lib/actions/get_leaguedashplayershotlocations.js",
+            "title": "get_leaguedashplayershotlocations",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_leaguedashplayershotlocations.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_leaguedashplayerstats": {
+            "main": "./lib/actions/get_leaguedashplayerstats.js",
+            "title": "get_leaguedashplayerstats",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_leaguedashplayerstats.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_leaguedashptdefend": {
+            "main": "./lib/actions/get_leaguedashptdefend.js",
+            "title": "get_leaguedashptdefend",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_leaguedashptdefend.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_leaguedashptteamdefend": {
+            "main": "./lib/actions/get_leaguedashptteamdefend.js",
+            "title": "get_leaguedashptteamdefend",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_leaguedashptteamdefend.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_leaguedashteamclutch": {
+            "main": "./lib/actions/get_leaguedashteamclutch.js",
+            "title": "get_leaguedashteamclutch",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_leaguedashteamclutch.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_leaguedashteamptshot": {
+            "main": "./lib/actions/get_leaguedashteamptshot.js",
+            "title": "get_leaguedashteamptshot",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_leaguedashteamptshot.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_leaguedashteamshotlocations": {
+            "main": "./lib/actions/get_leaguedashteamshotlocations.js",
+            "title": "get_leaguedashteamshotlocations",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_leaguedashteamshotlocations.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_leaguedashteamstats": {
+            "main": "./lib/actions/get_leaguedashteamstats.js",
+            "title": "get_leaguedashteamstats",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_leaguedashteamstats.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_leagueleaders": {
+            "main": "./lib/actions/get_leagueleaders.js",
+            "title": "get_leagueleaders",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_leagueleaders.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_playbyplay": {
+            "main": "./lib/actions/get_playbyplay.js",
+            "title": "get_playbyplay",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_playbyplay.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_playbyplayv2": {
+            "main": "./lib/actions/get_playbyplayv2.js",
+            "title": "get_playbyplayv2",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_playbyplayv2.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_playercareerstats": {
+            "main": "./lib/actions/get_playercareerstats.js",
+            "title": "get_playercareerstats",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_playercareerstats.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_playercompare": {
+            "main": "./lib/actions/get_playercompare.js",
+            "title": "get_playercompare",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_playercompare.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_playerdashboardbyclutch": {
+            "main": "./lib/actions/get_playerdashboardbyclutch.js",
+            "title": "get_playerdashboardbyclutch",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_playerdashboardbyclutch.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_playerdashboardbygamesplits": {
+            "main": "./lib/actions/get_playerdashboardbygamesplits.js",
+            "title": "get_playerdashboardbygamesplits",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_playerdashboardbygamesplits.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_playerdashboardbygeneralsplits": {
+            "main": "./lib/actions/get_playerdashboardbygeneralsplits.js",
+            "title": "get_playerdashboardbygeneralsplits",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_playerdashboardbygeneralsplits.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_playerdashboardbylastngames": {
+            "main": "./lib/actions/get_playerdashboardbylastngames.js",
+            "title": "get_playerdashboardbylastngames",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_playerdashboardbylastngames.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_playerdashboardbyopponent": {
+            "main": "./lib/actions/get_playerdashboardbyopponent.js",
+            "title": "get_playerdashboardbyopponent",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_playerdashboardbyopponent.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_playerdashboardbyshootingsplits": {
+            "main": "./lib/actions/get_playerdashboardbyshootingsplits.js",
+            "title": "get_playerdashboardbyshootingsplits",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_playerdashboardbyshootingsplits.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_playerdashboardbyteamperformance": {
+            "main": "./lib/actions/get_playerdashboardbyteamperformance.js",
+            "title": "get_playerdashboardbyteamperformance",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_playerdashboardbyteamperformance.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_playerdashboardbyyearoveryear": {
+            "main": "./lib/actions/get_playerdashboardbyyearoveryear.js",
+            "title": "get_playerdashboardbyyearoveryear",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_playerdashboardbyyearoveryear.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_playerdashptpass": {
+            "main": "./lib/actions/get_playerdashptpass.js",
+            "title": "get_playerdashptpass",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_playerdashptpass.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_playerdashptreb": {
+            "main": "./lib/actions/get_playerdashptreb.js",
+            "title": "get_playerdashptreb",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_playerdashptreb.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_playerdashptreboundlogs": {
+            "main": "./lib/actions/get_playerdashptreboundlogs.js",
+            "title": "get_playerdashptreboundlogs",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_playerdashptreboundlogs.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_playerdashptshotdefend": {
+            "main": "./lib/actions/get_playerdashptshotdefend.js",
+            "title": "get_playerdashptshotdefend",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_playerdashptshotdefend.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_playerdashptshotlog": {
+            "main": "./lib/actions/get_playerdashptshotlog.js",
+            "title": "get_playerdashptshotlog",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_playerdashptshotlog.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_playerdashptshots": {
+            "main": "./lib/actions/get_playerdashptshots.js",
+            "title": "get_playerdashptshots",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_playerdashptshots.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_playergamelog": {
+            "main": "./lib/actions/get_playergamelog.js",
+            "title": "get_playergamelog",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_playergamelog.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_playerprofile": {
+            "main": "./lib/actions/get_playerprofile.js",
+            "title": "get_playerprofile",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_playerprofile.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_playerprofilev2": {
+            "main": "./lib/actions/get_playerprofilev2.js",
+            "title": "get_playerprofilev2",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_playerprofilev2.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_playersvsplayers": {
+            "main": "./lib/actions/get_playersvsplayers.js",
+            "title": "get_playersvsplayers",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_playersvsplayers.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_playervsplayer": {
+            "main": "./lib/actions/get_playervsplayer.js",
+            "title": "get_playervsplayer",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_playervsplayer.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_playoffpicture": {
+            "main": "./lib/actions/get_playoffpicture.js",
+            "title": "get_playoffpicture",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_playoffpicture.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_scoreboard": {
+            "main": "./lib/actions/get_scoreboard.js",
+            "title": "get_scoreboard",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_scoreboard.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_scoreboardV2": {
+            "main": "./lib/actions/get_scoreboardV2.js",
+            "title": "get_scoreboardV2",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_scoreboardV2.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_shotchartdetail": {
+            "main": "./lib/actions/get_shotchartdetail.js",
+            "title": "get_shotchartdetail",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_shotchartdetail.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_shotchartlineupdetail": {
+            "main": "./lib/actions/get_shotchartlineupdetail.js",
+            "title": "get_shotchartlineupdetail",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_shotchartlineupdetail.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_teamdashboardbyclutch": {
+            "main": "./lib/actions/get_teamdashboardbyclutch.js",
+            "title": "get_teamdashboardbyclutch",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_teamdashboardbyclutch.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_teamdashboardbygamesplits": {
+            "main": "./lib/actions/get_teamdashboardbygamesplits.js",
+            "title": "get_teamdashboardbygamesplits",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_teamdashboardbygamesplits.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_teamdashboardbygeneralsplits": {
+            "main": "./lib/actions/get_teamdashboardbygeneralsplits.js",
+            "title": "get_teamdashboardbygeneralsplits",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_teamdashboardbygeneralsplits.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_teamdashboardbylastngames": {
+            "main": "./lib/actions/get_teamdashboardbylastngames.js",
+            "title": "get_teamdashboardbylastngames",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_teamdashboardbylastngames.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_teamdashboardbyopponent": {
+            "main": "./lib/actions/get_teamdashboardbyopponent.js",
+            "title": "get_teamdashboardbyopponent",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_teamdashboardbyopponent.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_teamdashboardbyshootingsplits": {
+            "main": "./lib/actions/get_teamdashboardbyshootingsplits.js",
+            "title": "get_teamdashboardbyshootingsplits",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_teamdashboardbyshootingsplits.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_teamdashboardbyteamperformance": {
+            "main": "./lib/actions/get_teamdashboardbyteamperformance.js",
+            "title": "get_teamdashboardbyteamperformance",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_teamdashboardbyteamperformance.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_teamdashboardbyyearoveryear": {
+            "main": "./lib/actions/get_teamdashboardbyyearoveryear.js",
+            "title": "get_teamdashboardbyyearoveryear",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_teamdashboardbyyearoveryear.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_teamdashlineups": {
+            "main": "./lib/actions/get_teamdashlineups.js",
+            "title": "get_teamdashlineups",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_teamdashlineups.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_teamdashptpass": {
+            "main": "./lib/actions/get_teamdashptpass.js",
+            "title": "get_teamdashptpass",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_teamdashptpass.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_teamdashptreb": {
+            "main": "./lib/actions/get_teamdashptreb.js",
+            "title": "get_teamdashptreb",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_teamdashptreb.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_teamdashptshots": {
+            "main": "./lib/actions/get_teamdashptshots.js",
+            "title": "get_teamdashptshots",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_teamdashptshots.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_teamgamelog": {
+            "main": "./lib/actions/get_teamgamelog.js",
+            "title": "get_teamgamelog",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_teamgamelog.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_teaminfocommon": {
+            "main": "./lib/actions/get_teaminfocommon.js",
+            "title": "get_teaminfocommon",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_teaminfocommon.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_teamplayerdashboard": {
+            "main": "./lib/actions/get_teamplayerdashboard.js",
+            "title": "get_teamplayerdashboard",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_teamplayerdashboard.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_teamplayeronoffdetails": {
+            "main": "./lib/actions/get_teamplayeronoffdetails.js",
+            "title": "get_teamplayeronoffdetails",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_teamplayeronoffdetails.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_teamplayeronoffsummary": {
+            "main": "./lib/actions/get_teamplayeronoffsummary.js",
+            "title": "get_teamplayeronoffsummary",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_teamplayeronoffsummary.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_teamvsplayer": {
+            "main": "./lib/actions/get_teamvsplayer.js",
+            "title": "get_teamvsplayer",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_teamvsplayer.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_teamyearbyyearstats": {
+            "main": "./lib/actions/get_teamyearbyyearstats.js",
+            "title": "get_teamyearbyyearstats",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_teamyearbyyearstats.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "get_videoStatus": {
+            "main": "./lib/actions/get_videoStatus.js",
+            "title": "get_videoStatus",
+            "description": "",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_videoStatus.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        }
+    }
+}

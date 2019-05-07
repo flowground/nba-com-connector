@@ -1,0 +1,25 @@
+{
+    "type": "object",
+    "properties": {
+        "LeagueID": {
+            "required": false,
+            "type": "string"
+        },
+        "Season": {
+            "required": false,
+            "type": "string"
+        },
+        "SeasonType": {
+            "required": false,
+            "type": "string"
+        },
+        "PlayerID": {
+            "required": false,
+            "type": "string"
+        },
+        "TeamID": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

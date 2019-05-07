@@ -1,0 +1,49 @@
+{
+    "type": "object",
+    "properties": {
+        "PointCap": {
+            "required": false,
+            "type": "string"
+        },
+        "WestPlayer1": {
+            "required": true,
+            "type": "string"
+        },
+        "WestPlayer2": {
+            "required": true,
+            "type": "string"
+        },
+        "WestPlayer3": {
+            "required": true,
+            "type": "string"
+        },
+        "WestPlayer4": {
+            "required": true,
+            "type": "string"
+        },
+        "WestPlayer5": {
+            "required": true,
+            "type": "string"
+        },
+        "EastPlayer1": {
+            "required": true,
+            "type": "string"
+        },
+        "EastPlayer2": {
+            "required": true,
+            "type": "string"
+        },
+        "EastPlayer3": {
+            "required": true,
+            "type": "string"
+        },
+        "EastPlayer4": {
+            "required": true,
+            "type": "string"
+        },
+        "EastPlayer5": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

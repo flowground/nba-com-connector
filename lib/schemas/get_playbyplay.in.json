@@ -1,0 +1,17 @@
+{
+    "type": "object",
+    "properties": {
+        "GameID": {
+            "required": true,
+            "type": "string"
+        },
+        "StartPeriod": {
+            "required": true,
+            "type": "string"
+        },
+        "EndPeriod": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

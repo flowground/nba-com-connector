@@ -1,0 +1,33 @@
+{
+    "type": "object",
+    "properties": {
+        "LeagueID": {
+            "required": true,
+            "type": "string"
+        },
+        "PlayerID": {
+            "required": true,
+            "type": "string"
+        },
+        "Season": {
+            "required": true,
+            "type": "string"
+        },
+        "SeasonType": {
+            "required": true,
+            "type": "string"
+        },
+        "GraphStartSeason": {
+            "required": true,
+            "type": "string"
+        },
+        "GraphEndSeason": {
+            "required": true,
+            "type": "string"
+        },
+        "GraphStat": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

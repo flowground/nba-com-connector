@@ -1,0 +1,17 @@
+{
+    "type": "object",
+    "properties": {
+        "GameDate": {
+            "required": true,
+            "type": "string"
+        },
+        "LeagueID": {
+            "required": true,
+            "type": "string"
+        },
+        "DayOffset": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}
